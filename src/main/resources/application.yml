@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    # 注册自己 - 注册了自己不会报错
+    # 设成true 不报错
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    # 或者简单粗暴把自我保护模式关闭
+#    enableSelfPreservation: false
